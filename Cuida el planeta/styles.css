@@ -1,0 +1,300 @@
+/* --- Estilo general --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* --- Encabezado (azul pastel para combinar) --- */
+header {
+    background-color: #d0ecf2; /* azul pastel */
+    color: #000000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1:first-of-type {
+    margin: 0;
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: left;
+}
+
+header h1:last-of-type {
+    margin: 0;
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+/* --- Navegación --- */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contenido debajo del header --- */
+main {
+    padding-top: 80px;
+}
+
+/* --- Bienvenida (cuadro verde pastel) --- */
+#inicio {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.inicio-box {
+  background-color: #d2f0c7; /* verde pastel */
+  padding: 35px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 750px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título */
+.inicio-box h2 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el párrafo de introducción */
+.intro {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el párrafo principal */
+.descripcion {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Estilo para la lista de beneficios */
+.beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.beneficios li {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #000000;
+}
+
+/* Estilo para la frase final */
+.frase-final {
+  font-size: 16px;
+  color: #000000;
+}
+
+
+/* --- Productos (cuadros azul pastel) --- */
+#productos {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: #d0ecf2; /* azul pastel */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 320px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease; /* transiciones suaves */
+}
+
+.producto img:hover {
+    transform: scale(1.05); /* efecto de zoom al pasar el mouse o tocar en móvil */
+}
+
+/* --- Servicios (fondo blanco, sin cuadro) --- */
+/* Contenedor general de las tarjetas */
+.tarjetas-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta {
+  background-color: #d2f0c7; /* verde pastel */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Título del servicio */
+.centrar h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 5px;
+
+}
+
+/* Descripción */
+.tarjeta p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Efecto al pasar el mouse o tocar */
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- Contacto (cuadro verde pastel) --- */
+#contacto {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #d0ecf2; /* verde pastel */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    background-color: #2e4d1f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1e3313;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
